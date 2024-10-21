@@ -1,0 +1,25 @@
+.cardsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(55, 53, 53);
+}
+
+.card{
+  background-color: rgb(104, 101, 101);
+  box-shadow: #646cff;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

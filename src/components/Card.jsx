@@ -1,8 +1,23 @@
+import './Card.css'
+
 const Card = (props) => {
     return (
-        <div>
-            <h1>I'm {`${props.card}`} cards</h1>
-        </div>
+        <>
+            <div className="cardsDiv" >
+                {props.songs.map((el) => (
+                    <>
+                        <div className="card" key={el._id} style={{margin: '10px'}}>
+                            <p>{el.title} by {el.artist}</p>
+                            <div>
+                            <button>Play</button>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                            </div>
+                        </div>
+                    </>
+                ))}
+            </div>
+        </>
     )
 }
 

@@ -6,7 +6,32 @@ import './App.css'
 
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/tracks`;
 
-const cardNumber = 4
+const songs = [
+  {
+    "_id": "67157773072a4950dd5db2b3",
+    "title": "Purple Cats",
+    "artist": "Chrypton",
+    "__v": 0
+},
+{
+    "_id": "67158ef5bb5679f1ce75fc36",
+    "title": "Zatrinern",
+    "artist": "Excavation",
+    "__v": 0
+},
+{
+  "_id": "67157773072a4950dd5db2b3",
+  "title": "Purple Cats",
+  "artist": "Chrypton",
+  "__v": 0
+},
+{
+  "_id": "67158ef5bb5679f1ce75fc36",
+  "title": "Zatrinern",
+  "artist": "Excavation",
+  "__v": 0
+}
+]
 
 function App() {
   return (
@@ -14,7 +39,7 @@ function App() {
       <h1>Track List:</h1>
       <Routes>
         <Route path='/' element={<h1>Hello World</h1>} />
-        <Route path='/tracks' element={< Card card={cardNumber} />} />
+        <Route path='/tracks' element={< Card songs={songs} />} />
         {/* <Route path='/traks/new' element={<NewTrack />} />
         <Route path='/traks/:id' element={<EditTrack />} /> */}
         <Route path='*' element={<h2>Whoops, nothing here!</h2>} />
