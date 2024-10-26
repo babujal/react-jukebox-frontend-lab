@@ -16,10 +16,26 @@
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #c11c1c;
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.trackListh1{
+  background-color: rgb(55, 53, 53);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  color: #e05b5b;
+}
+
+.nowPlaying{
+  color: azure;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(55, 53, 53);
 }
